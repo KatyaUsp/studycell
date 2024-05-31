@@ -1,4 +1,4 @@
-<?php 
+<?php
   session_start();
   if(isset($_SESSION['unique_id'])){
     header("location: users.php");
@@ -10,6 +10,7 @@
   <div class="wrapper">
     <section class="form signup">
       <header>StudyCell</header>
+      <h3>Register Here</h3>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="field input">
@@ -22,7 +23,7 @@
           </div>
          <div class="field input">
           <label>Password</label>
-          <input type="password" name="password" placeholder="Enter new password" required>
+          <input type="password" name="password" placeholder="Enter password" required>
           <i class="fas fa-eye"></i>
         </div>
         <div class="name-details">
@@ -37,19 +38,19 @@
          </div>
          <div class="field input">
           <label>Learning interests</label>
-          <input type="text" name="interests" placeholder="Subject to study" >
+          <input type="text" name="interests" placeholder="Preferred subjects" >
         </div>
         <div class="field input">
           <label>Additional information</label>
-          <input type="text" name="info" placeholder="Preferred communication methods or time" >
+          <input type="text" name="info" placeholder="Preferred communication methods/time" >
         </div>
 
        
         <div class="field button">
-          <input type="submit" name="submit" value="Create a profile">
+          <input type="submit" name="submit" value="Register">
         </div>
       </form>
-      <div class="link">Already signed up? <a href="login.php">Login now</a></div>
+      <div class="link">Already registered? <a href="login.php">Login</a></div>
     </section>
   </div>
 
