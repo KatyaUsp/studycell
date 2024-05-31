@@ -60,4 +60,8 @@ setInterval(() =>{
 function scrollToBottom(){
     chatBox.scrollTop = chatBox.scrollHeight;
   }
-  
+
+
+videoCallBtn.onclick = () => {
+    window.location.href = `video_call.php?user_id=${incoming_id}`;
+}

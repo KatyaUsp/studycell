@@ -21,9 +21,12 @@
         ?>
         <a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
         <img src="php/images/user.png" alt="">
-        <div class="details">
-          <span><?php echo $row['name'] ?></span>
-          <p><?php echo $row['status']; ?></p>
+        <div class="details_btn">
+          <div class="user-info-btn">
+            <span><?php echo $row['name'] ?></span>
+            <p><?php echo $row['status']; ?></p>
+          </div>
+          <button id="videoCallBtn"><i class="fas fa-video"></i>Start a study session</button>
         </div>
       </header>
       <div class="chat-box">
@@ -38,6 +41,12 @@
   </div>
 
   <script src="javascript/chat.js"></script>
+  <script>
+    document.getElementById('videoCallBtn').onclick = () => {
+      const userId = <?php echo $user_id; ?>;
+      window.location.href = `video_call.php?user_id=${userId}`;
+    }
+  </script>
 
 </body>
 </html>
