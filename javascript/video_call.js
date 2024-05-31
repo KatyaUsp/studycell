@@ -12,7 +12,7 @@ const socket = new WebSocket('ws://localhost:8080');
 let callStartTime;
 let callTimerInterval;
 
-// Запрашиваем доступ к видео и аудио
+
 navigator.mediaDevices.getUserMedia({ video: true, audio: true })
     .then(stream => {
         localStream = stream;
@@ -51,7 +51,7 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: true })
             }
         };
 
-        // Создаем предложение для соединения
+
         peerConnection.createOffer().then(offer => {
             peerConnection.setLocalDescription(offer).then(() => {
                 socket.send(JSON.stringify({ 'sdp': offer }));
