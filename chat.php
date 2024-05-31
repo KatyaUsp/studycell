@@ -26,7 +26,6 @@
             <span><?php echo $row['name'] ?></span>
             <p><?php echo $row['status']; ?></p>
           </div>
-          <!-- Добавляем кнопку видеозвонка -->
           <button id="videoCallBtn"><i class="fas fa-video"></i>Start a study session</button>
         </div>
       </header>
