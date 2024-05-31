@@ -62,8 +62,6 @@ function scrollToBottom(){
   }
 
 
-// Обработчик нажатия на кнопку видеозвонка
 videoCallBtn.onclick = () => {
-    // Переход на страницу видеозвонка
     window.location.href = `video_call.php?user_id=${incoming_id}`;
 }
