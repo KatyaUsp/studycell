@@ -353,6 +353,8 @@ body{
   pointer-events: auto;
 }
 
+
+
 /* Responive media query */
 @media screen and (max-width: 450px) {
   .form, .users{
@@ -417,4 +419,119 @@ body{
   .chat-area form button{
     width: 45px;
   }
+}
+ 
+|/*video-chat*/
+.wrapper-video {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.video-call-area header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.video-call-area header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+    .video-call-area header .back-icon {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .video-call-area header .details {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .video-call-area header .user-info {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .video-call-area header .call-timer {
+        font-size: 16px;
+    }
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Изменено на 100% */
+    height: 100%; /* Изменено на 100% */
+}
+
+    .video-container video {
+        max-width: 50%; /* Добавлено */
+        max-height: 50%; /* Добавлено */
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /*call button*/
+/* Общие стили для кнопок */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Стиль для кнопки видеозвонка */
+#videoCallBtn {
+    background-color: #4CAF50; /* Зеленый цвет кнопки */
+    color: white; /* Цвет текста */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px; /* Adjust the font size */
+    padding: 5px 10px; /* Adjust the padding */
+    margin-left: auto; /* Отодвигаем кнопку к правому краю */
+}
+
+    #videoCallBtn i {
+        font-size: 16px;
+    }
+
+    #videoCallBtn:hover {
+        background-color: #45a049;
+    }
+
+    #videoCallBtn i {
+        margin-right: 2.5px;
+    }
+
+.details_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-info-btn {
+    display: flex;
+    flex-direction: column;
+    margin-right: 17px; /* Adjust the margin between user-info and button */
+    margin-left: auto; /* Move the user-info container to the left as much as possible */
 }
