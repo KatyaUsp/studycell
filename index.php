@@ -10,7 +10,7 @@
   <div class="wrapper">
     <section class="form signup">
       <header>StudyCell</header>
-      <h3>Register Here</h3>
+      <h3 class="center-h3">Register Here</h3>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="field input">

@@ -43,9 +43,10 @@ body{
   width: 75%;
 }
 
-.form  h3 , p{
-  text-align: center;
+.form   p{
+  text-align: left;
 }
+
 .form h3{
   margin-top: 5px;
   font-size: 22px;
@@ -325,7 +326,7 @@ body{
 .outgoing .details p{
   background: #333;
   color: #fff;
-  border-radius: 18px 18px 0 18px;
+  border-radius: 18px 18px 0 10px;
 }
 .chat-box .incoming{
   display: flex;
@@ -380,7 +381,7 @@ body{
 /* Responive media query */
 @media screen and (max-width: 450px) {
   .form, .users{
-    padding: 20px;
+    padding: 30px;
   }
   .form header{
     text-align: center;
@@ -404,7 +405,7 @@ body{
     font-size: 16px;
   }
   :is(.users, .users-list) .content .details{
-    margin-left: 15px;
+    margin-left: 10px;
   }
 
   .users-list a{
@@ -556,4 +557,8 @@ button {
     flex-direction: column;
     margin-right: 17px; /* Adjust the margin between user-info and button */
     margin-left: auto; /* Move the user-info container to the left as much as possible */
+}
+
+.center-h3 {
+    text-align: center;
 }

@@ -11,7 +11,7 @@
     <img id="login-img" src="php/images/login.jpg" alt="">
     <section class="form login">
       <header>StudyCell</header>
-      <h3>Log in</h3>
+      <h3 class="center-h3">Log in</h3>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="field input">
